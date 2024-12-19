@@ -11,9 +11,9 @@ public class Task2 {
 
         Expression2 expression2 =  n  -> n.length() > maxLength;
 
-        System.out.println(sumOfEven(words1, expression2));
+        System.out.println(maxLine(words1, expression2));
     }
-    public static String sumOfEven (String [] words1, Expression2 exp)  {
+    public static String maxLine (String [] words1, Expression2 exp)  {
         String result = " ";
         for (String element : words1) {
             if (exp.isEqual(element)) {
